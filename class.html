@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Class Method</h2>
+
+    <p>Demonstration of how to add a method in a JavaScript Class.</p>
+
+    <p id="demo"></p>
+
+    <script>
+class Mot {
+  constructor(jesus, color, cc, weigth, size, made) {
+    this.motname = jesus;
+    this.color = color;
+    this.cc = cc;
+    this.weigth = weigth;
+    this.size = size;
+    this.made = made;
+  }
+  present() {
+    return "I have a " + this.motname + ", this is " + this.color + ", it has " + this.cc + " cilyndrical, this weigth is  " + this.weigth + " kg, and this size is " + this.size + " cm,  " + this.motname + " is a sport mortocycle, made in " + this.made;
+  }
+
+
+}
+
+mymot = new Mot("Yamaha", "Blue", 150, 300, 150, "China");
+document.getElementById("demo").innerHTML = mymot.present();
+    </script>
+
+</body>
+</html>
